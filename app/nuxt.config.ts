@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     "@vite-pwa/nuxt",
   ],
   i18n: {
-    baseUrl: process.env.NUXT_APP_URL || "http://localhost:3000/",
+    baseUrl: process.env.NUXT_APP_URL || "https://tournament.app/",
     strategy: "no_prefix",
     defaultLocale: "en",
     detectBrowserLanguage: {
@@ -35,11 +35,17 @@ export default defineNuxtConfig({
       {
         code: "en",
         name: "English",
+        file: "locales/en.json",
+      },
+      {
+        code: "pl",
+        name: "English",
+        file: "locales/pl.json",
       },
     ],
   },
   site: {
-    url: process.env.NUXT_APP_URL || "http://localhost:3000/",
+    url: process.env.NUXT_APP_URL || "https://tournament.app/",
   },
   app: {
     baseURL: "/",
@@ -48,7 +54,7 @@ export default defineNuxtConfig({
     teleportTag: "aside",
     pageTransition: {
       name: "page",
-      mode: "out-in"
+      mode: "out-in",
     },
     head: {
       charset: "utf-8",
@@ -56,7 +62,7 @@ export default defineNuxtConfig({
       meta: [
         {
           name: "author",
-          content: "notbyte.com",
+          content: "https://notbyte.com/",
         },
         {
           name: "robots",

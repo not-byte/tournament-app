@@ -1,11 +1,13 @@
 <script setup lang="ts">
-errorRedirect(`/`)
-
 import type { NuxtError } from "#app";
 
 defineProps({
   error: Object as () => NuxtError,
 });
+
+const errorRedirect = (path: string) => clearError({ redirect: path });
+
+errorRedirect("/");
 </script>
 
 <template>

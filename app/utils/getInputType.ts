@@ -5,4 +5,4 @@ const types = {
   repeated_password: "password",
 };
 
-export default (key: unknown) => types[key as keyof Object] || "text";
+export default (key: string) => types[key as keyof Object] || "text";

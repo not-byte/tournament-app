@@ -1,4 +1,36 @@
-.nuxt
-.output
-build
-coverage
+# Nuxt dev/build outputs
+
+app/.output
+app/.data
+app/.nuxt
+app/.nitro
+app/.cache
+app/dist
+
+# Node dependencies
+
+app/node_modules
+
+# Logs
+
+app/logs
+app/*.log
+
+# Misc
+
+# Local env files
+
+app/.env
+app/.env.*
+app/!.env.example
+
+# Service worker
+
+app/sw.*
+
+# Development
+
+.vscode
+.DS_Store
+.fleet
+.idea

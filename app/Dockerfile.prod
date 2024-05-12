@@ -1,6 +1,6 @@
 FROM node:current-alpine
 
-LABEL authors = "botprzemek,pawelos231,akolt19d,nozowymrozon"
+LABEL authors = "akolt19d,botprzemek,nozowymrozon,pawelos231"
 
 ARG NUXT_APP_URL
 ARG NUXT_MAIL_URL

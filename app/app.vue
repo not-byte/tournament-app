@@ -1,4 +1,4 @@
-<script setup async lang="ts">
+<script setup lang="ts">
 const config = useRuntimeConfig();
 const routeName = getPath();
 const { t, locale } = useI18n({ useScope: "global" });

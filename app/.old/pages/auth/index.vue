@@ -1,4 +1,4 @@
-<script setup async lang="ts">
+<script setup lang="ts">
 definePageMeta({
   middleware: ["query"],
 });
